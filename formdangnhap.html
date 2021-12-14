@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+<title>Đăng nhập</title>
+<meta charset="UTF-8">
+<meta name="description" content="Đăng nhập">
+<meta name="keywords" content="BTS, bts, Bangtan Boys, ARMY, bangtan boys,">
+<meta name="author" content="Thao Anh">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-image: url('images/Nền3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: slateblue;
+}
+* {
+  box-sizing: border-box;
+}
+.left {
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+.main {
+  background-color: #b6d1eb;
+  padding: 20px;
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+.home {
+   align-items: left;
+   display: block;
+   justify-content: left;
+   float: left;
+}
+.homee:link, .homee:visited {
+  background-color: blue;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.homee:hover, .homee:active {
+  background-color: rgb(4, 20, 112);
+}
+.dang:link, .dang:visited {
+  background-color: slateblue;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.dang:hover, .dang:active {
+  background-color: rgb(99, 30, 163);
+}
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="home"><a href="index.html" class="homee">HOME</a></div>
+    <div class="home"><a href="formdangki.html" class="dang">Đăng kí</a></div>
+    <div class="home"><a href="formdangnhap.html" class="dang">Đăng nhập</a></div>
+    </nav>
+    <form target="_self" method="get" autocomplete="on" novalidate style="text-align:right">
+      <input type="search" id="search" name="search" placeholder="&#x1F50D">
+    </form><br>
+    
+<h1>Đăng nhập tài khoản</h1><br>
+<div class="left">
+  <p> </p>
+</div>
+<div class="main">
+  <form target="_self" method="get" autocomplete="on" novalidate>
+    <fieldset>
+    <label for="tđn">Tên đăng nhập:</label><br>
+    <input type="text" id="tđn" name="tđn" placeholder="thaoanh123" maxlength="20" required autofocus><br><br>
+    <label for="pass">Mật khẩu:</label><br>
+    <input type="password" id="password" name="password" placeholder="12345" required><br><br>
+    <input type="submit" value="Đăng nhập"><br>
+    </fieldset>
+
+  </form>
+
+
+    <!-- Phần chân trang -->
+<br>
+<hr>
+<footer id="footer">
+<div>
+<address>
+Written by Thao Anh.<br>
+Hanoi, Vietnam.<br>
+<button onclick="document.location='mailto:thaoanhjennyhoahong@gmail.com'">Send email</button>
+</address>
+</div>
+</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+<title>Khảo sát</title>
+<meta charset="UTF-8">
+<meta name="description" content="Khảo sát">
+<meta name="keywords" content="BTS, bts, Bangtan Boys, ARMY, bangtan boys,">
+<meta name="author" content="Thao Anh">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  <!-- Style nền của trang -->
+body {
+  background-image: url('images/Nền3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.home1 {
+   align-items: left;
+   display: flex;
+   justify-content: left;
+}
+.home2:link, .home2:visited {
+  background-color: blue;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.home2:hover, .home2:active {
+  background-color: rgb(99, 30, 163);
+}
+h1 {
+  text-align: center;
+  color: slateblue;
+}
+* {
+  box-sizing: border-box;
+}
+.left {
+  padding: 20px;
+  float: left;
+  width: 22%; /* The width is 20%, by default */
+}
+.main {
+  background-color: #b6d1eb;
+  padding: 20px;
+  float: left;
+  align-items: center;
+  width: 57%; /* The width is 60%, by default */
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+legend {
+  text-align: center;
+}
+
+.home {
+   align-items: left;
+   display: block;
+   justify-content: left;
+   float: left;
+}
+.homee:link, .homee:visited {
+  background-color: blue;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.homee:hover, .homee:active {
+  background-color: rgb(4, 20, 112);
+}
+.dang:link, .dang:visited {
+  background-color: slateblue;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.dang:hover, .dang:active {
+  background-color: rgb(99, 30, 163);
+}
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="home"><a href="index.html" class="homee">HOME</a></div>
+    <div class="home"><a href="formdangki.html" class="dang">Đăng kí</a></div>
+    <div class="home"><a href="formdangnhap.html" class="dang">Đăng nhập</a></div>
+    </nav>
+    <form target="_self" method="get" autocomplete="on" novalidate style="text-align:right">
+      <input type="search" id="search" name="search" placeholder="&#x1F50D">
+    </form><br>
+    
+
+<h1>KHẢO SÁT DÀNH CHO BẠN</h1><br>
+<div class="left">
+ <p> </p>
+</div>
+<div class="main">
+<p style="text-align:center;"><b>Mình rất vui vì bạn đã dành thời gian cho mình, chúng ta hãy bắt đầu ngay thôi nào!</b></p>
+<form target="_self" method="get" autocomplete="on" novalidate>
+<fieldset>
+<legend>Thông tin cần điền</legend>
+<!-- Tên -->
+<label for="tên">Họ và tên của bạn:</label><br><br>
+<input type="text" id="tên" name="tên" placeholder="Tên bạn" required autofocus><br>
+<!-- Tuổi -->
+<p>Độ tuổi của bạn:</p>
+<input type="radio" id="18" name="tuổi" value="18" required>
+<label for="18">&lt;&nbsp;18</label><br>
+<input type="radio" id="25" name="tuổi" value="25" required>
+<label type="radio">&lt;&nbsp;25</label><br>
+<input type="radio" id="26" name="tuổi" value="26" required>
+<label type="radio">&gt;&nbsp;25</label><br><hr>
+<!-- Nơi ở -->
+<p>Thành phố nơi bạn đang sinh sống:</p>
+<input type="radio" id="HN" name="TP" value="HN">
+<label for="HN">Hà Nội</label><br>
+<input type="radio" id="HCM" name="TP" value="HCM">
+<label for="HCM">TP.Hồ Chí Minh</label><br>
+<input type="radio" id="ĐN" name="TP" value="ĐN">
+<label for="ĐN">Đà Nẵng</label><br>
+<input type="radio" id="TPK" name="TP" value="TPK">
+<label for="TPK">Thành phố khác:</label>
+<input type="text" id="tên TP" placeholder="Tên thành phố"><br><hr>
+<!--Bias-->
+<p>Thành viên yêu thích của bạn:</p>
+<input type="checkbox" id="Jin" name="bias" value="Jin">
+<label for="Jin">Jin</label><br>
+<input type="checkbox" id="RM" name="bias2" value="RM">
+<label for="RM">RM</label><br>
+<input type="checkbox" id="Suga" name="bias3" value="Suga">
+<label for="Suga">Suga</label><br>
+<input type="checkbox" id="J-Hope" name="bias4" value="J-Hope">
+<label for="J-Hope">J-Hope</label><br>
+<input type="checkbox" id="Jimin" name="bias5" value="Jimin">
+<label for="Jimin">Jimin</label><br>
+<input type="checkbox" id="V" name="bias6" value="V">
+<label for="V">V</label><br>
+<input type="checkbox" id="Jungkook" name="bias7" value="Jungkook">
+<label for="Jungkook">Jungkook</label><br><hr>
+<!--Album yêu thích-->
+<label for="album">Album của BTS mà bạn yêu thích nhất:</label><br><br>
+<input list="album" name="album" placeholder="You Never Walk Alone">
+<datalist id="album">
+  <option value="Dark & Wild">
+  <option value="Wings">
+  <option value="Love Yourself: Tear">
+  <option value="Map of the Soul: 7">
+  <option value="Be">
+</datalist><br>
+</fieldset><br>
+</form>
+<fieldset>
+  <legend>Nhận xét của bạn</legend>
+<!--Điểm-->
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)" required>
+  Bạn hãy chấm điểm website này của mình nhé!<br><br>Hình thức website:
+  <input type="range" id="a" name="a" value="50" max="50">
+  50<br>Trải nghiệm thao tác với website:
+  <input type="number" id="b" name="b" value="50" max="50">
+  50<br> Tổng điểm:
+  <output name="x" for="a b"></output>
+  <br><br>
+<!--Nhận xét-->
+<p>Hãy viết một nhận xét ngắn về website của mình nhé, mình rất mong chờ các ý kiến từ bạn:</p>
+  <textarea name="comments" rows="10" cols="50" placeholder="Hãy viết các ý kiến của bạn ở đây nhé"></textarea><br><br>
+  <input type="reset">
+</fieldset>
+<!--Button-->
+<p>Gượm đã nào, mau click vô đây nè:</p>
+<button type="button" onclick="alert('Cảm ơn tất cả các tình yêu vì đã dành thời gian cho tui nha.Love youuuu')">Click Me!</button><br><br><br>
+<!-- Nút gửi -->
+<fieldset>
+<p><strong>Còn giờ thì hãy gửi form này cho mình bằng cách click vào nút bên dưới nha.</strong></p>
+<input type="submit" value="Submit">
+</form><br>
+</fieldset>
+
+<!-- Phần chân trang -->
+<br>
+<hr>
+<footer id="footer">
+<div>
+<address>
+Written by Thao Anh.<br>
+Hanoi, Vietnam.<br>
+<button onclick="document.location='mailto:thaoanhjennyhoahong@gmail.com'">Send email</button>
+</address>
+</div>
+</footer>
+</div>
+
+</body>
+</html>

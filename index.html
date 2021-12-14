@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+<title>BTS</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+<meta charset="UTF-8">
+<meta name="description" content="About BTS">
+<meta name="keywords" content="BTS, bts, Bangtan Boys, ARMY, bangtan boys,">
+<meta name="author" content="Thao Anh">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Các style cơ bản của trang */
+body {
+  background-image: url('images/Nền3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+h1 {
+  color: slateblue;
+  text-align: center;
+}
+pre {
+  text-align: center;
+}
+h3 {
+  background-color: rgba(144, 59, 255, 0.8);
+  text-align: center;
+}
+a {
+  text-decoration: underline;
+}
+
+/* Style cho bảng Danh sách thành viên */
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  border-color: black;
+}
+th {
+  font-size: 20px;
+  width: 30%;
+}
+td {
+   width: 30%;
+}
+tr:hover {
+  background-color: rgba(0, 131, 255, 0.4);
+}
+
+/* Style cho Danh mục */
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: slateblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(99, 30, 163);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgba(144, 59, 255, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* Style cho nút Start */
+.a1 {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+.k:link, .k:visited {
+  background-color: blue;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.k:hover, .k:active {
+  background-color: rgb(99, 30, 163);
+}
+
+/* Điều chỉnh cột nd (Copy from: w3school-HTML Link color) */
+* {
+  box-sizing: border-box; }
+.left, .right {
+  background-color: rgba(25, 90, 235, 0.6);
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+.main {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+#div1, #div2 {
+  float: left;
+  width: 325px;
+  height: 184px;
+  margin: 25px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* Style cho nút Home */
+.home {
+   align-items: left;
+   display: block;
+   justify-content: left;
+   float: left;
+}
+.homee:link, .homee:visited {
+  background-color: blue;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.homee:hover, .homee:active {
+  background-color: rgb(4, 20, 112);
+}
+
+/* Style cho nút Đăng nhập và Đăng ký */
+.dang:link, .dang:visited {
+  background-color: slateblue;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.dang:hover, .dang:active {
+  background-color: rgb(99, 30, 163);
+}
+
+/* hết */
+</style>
+
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+</head>
+<body>
+<nav>
+<div class="home"><a href="index.html" class="homee">HOME</a></div>
+<div class="home"><a href="formdangki.html" class="dang">Đăng kí</a></div>
+<div class="home"><a href="formdangnhap.html" class="dang">Đăng nhập</a></div>
+</nav>
+<form target="_self" method="get" autocomplete="on" novalidate style="text-align:right">
+  <input type="search" id="search" name="search" placeholder="&#x1F50D">
+</form><br>
+
+
+<h1>BTS</h1><br>
+<p><strong><span style="color:slateblue">BTS</span></strong>, hay còn được gọi là <b>Bangtan Boys</b>, là một nhóm nhạc nam Hàn Quốc được thành lập bởi <em>Big Hit Entertainment</em> vào năm 2010 và ra mắt vào năm 2013. Nhóm bao gồm 7 thành viên <i>Jin</i>, <i>Suga</i>, <i>J-Hope</i>, <i>RM</i>, <i>Jimin</i>, <i>V</i> và <i>Jungkook</i>. Các thành viên đồng sáng tác và tự sản xuất phần lớn các sản phẩm âm nhạc của chính họ.</p>
+<pre>
+Forever we are young
+날리는 꽃잎들 사이로
+헤매어 달리는 이 미로
+Forever we are young
+넘어져 다치고 아파도
+끝없이 달리네 꿈을 향해
+</pre><hr>
+
+<!-- Đến đây là phần sơ lược -->
+
+<div class="left">
+<h2>Danh mục</h2>
+<p><a href="#Wiki">Wikipedia</a></p><hr>
+<p><a href="#Tên">Tên gọi</a></p><hr>
+<p><a href="#ds1">Danh sách thành viên</a></p><hr>
+<p><a href="#ds2">Danh sách đĩa nhạc</a></p><hr>
+<p><a href="#ds3">Các chuyến lưu diễn</a></p><hr>
+<p><a href="#ds4">Các liên kết ngoài</a></p><hr>
+<p><a href="#ds5">Một số bài hát nổi bật</a></p><hr>
+<p><a href="#ds6">Một số MV đạt hơn 1 tỉ lượt xem</a></p><hr>
+<p><a href="#ks">Khảo sát</a></p><hr>
+<p><a href="#footer">Thông tin tác giả</a></p>
+</div>
+
+<div class="main">
+<h3 id="Wiki">Wikipedia</h3><br>
+<picture>
+  <source media="(min-width: 650px)" srcset="images/BTS2.jpg">
+  <source media="(min-width: 465px)" srcset="images/BTS3.jpg">
+  <img src="images/BTS2.jpg" alt="BTS" width="100%">
+</picture>
+
+<p><mark>BTS trong một buổi chụp hình cho <cite>Dispatch</cite> vào năm 2019.</mark></p>
+<p><small>Theo chiều kim đồng hồ: Jin, RM, Jungkook, J-Hope, Suga, V và Jimin</small></p>
+<blockquote cite="https://vi.wikipedia.org/wiki/BTS">
+ Lời bài hát của họ, thường tập trung vào bình luận cá nhân và xã hội, chạm đến các chủ đề về sức khỏe tâm thần, những rắc rối của tuổi học đường và tuổi mới lớn, sự mất mát, hành trình hướng tới yêu thương bản thân và chủ nghĩa cá nhân. Các sản phẩm âm nhạc của nhóm đề cập đến những khái niệm văn học, tâm lý và bao gồm một cốt truyện vũ trụ song song.
+</blockquote><br>
+<p style="text-align:center;"><a href="https://vi.wikipedia.org/wiki/BTS" title="Click here if you want to know more about BTS" target="_blank">ABOUT BTS</a></p><br>
+
+<!-- Đây là hết Wiki -->
+
+<h3 id="Tên">Tên gọi</h3>
+<p>Tên của nhóm, BTS, là từ viết tắt thông qua Romaja của cụm từ tiếng Hàn Bangtan Sonyeondan (Hangul: 방탄소년단; Hanja: 防彈少年團; Hán-Việt: Phòng Đạn Thiếu Niên Đoàn). Theo thành viên J-Hope, cái tên biểu thị cho mong muốn của nhóm sẽ "ngăn chặn những định kiến, chỉ trích và kỳ vọng nhắm vào thanh thiếu niên như những viên đạn".Ở Nhật Bản, BTS được gọi là Bōdan Shōnendan (Kanji: 防弾少年団), với cách dịch tương tự.Vào tháng 7 năm 2017, BTS thông báo rằng tên của nhóm cũng sẽ là từ viết tắt của "Beyond The Scene", như một phần trong bộ nhận diện thương hiệu mới của nhóm.Điều này đã mở rộng cho tên của nhóm có thêm ý nghĩa là <q>BTS trẻ tuổi ngày càng trưởng thành, những người đang vượt ra ngoài thực tế mà họ đang phải đối mặt và tiến về phía trước.</q>
+<p>Tên fandom của nhóm là <del>army x<sup>2</sup> H<sub>2</sub>O</del> <del><bdo dir="rtl">A.R.M.Y</bdo></del> &rarr; <ins><abbr title="viết tắt của A: Adorable, R: Representative, M: Master of Ceremonies, Y: Youth">A.R.M.Y</abbr></ins></p>
+<h3 id="ds1">Danh sách thành viên</h3>
+<table>
+<caption>Danh sách thành viên (Cập nhật 06/10/2021)</caption>
+<tr>
+    <th>Nghệ danh</th>
+    <th>Tên khai sinh</th>
+    <th>Ngày sinh</th>
+  </tr>
+  <tr>
+    <td><a href="https://vi.wikipedia.org/wiki/Kim_Seok-jin" title="Click here if you want to know more about Jin" target="_blank">Jin</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/Kim_Seok-jin" title="Click here if you want to know more about Jin" target="_blank">Kim Seokjin</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/Kim_Seok-jin" title="Click here if you want to know more about Jin" target="_blank">04/12/1992 &#x2650 </a></td>
+  </tr>
+  <tr>
+    <td><a href="https://vi.wikipedia.org/wiki/Suga_(rapper)" title="Click here if you want to know more about Suga" target="_blank">Suga</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/Suga_(rapper)" title="Click here if you want to know more about Suga" target="_blank">Min Yoongi</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/Suga_(rapper)" title="Click here if you want to know more about Suga" target="_blank">09/03/1993 &#x2653</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://vi.wikipedia.org/wiki/J-Hope" title="Click here if you want to know more about J-Hope" target="_blank">J-Hope</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/J-Hope" title="Click here if you want to know more about J-Hope" target="_blank">Jung Hoseok</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/J-Hope" title="Click here if you want to know more about J-Hope" target="_blank">18/02/1994 &#x2652</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://vi.wikipedia.org/wiki/RM_(rapper)" title="Click here if you want to know more about RM" target="_blank">RM</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/RM_(rapper)" title="Click here if you want to know more about RM" target="_blank">Kim Namjoon</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/RM_(rapper)" title="Click here if you want to know more about RM" target="_blank">12/09/1994 &#x264D</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://vi.wikipedia.org/wiki/Jimin_(ca_s%C4%A9,_sinh_1995)" title="Click here if you want to know more about Jimin" target="_blank">Jimin</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/Jimin_(ca_s%C4%A9,_sinh_1995)" title="Click here if you want to know more about Jimin" target="_blank">Park Jimin</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/Jimin_(ca_s%C4%A9,_sinh_1995)" title="Click here if you want to know more about Jimin" target="_blank">13/10/1995 &#x264E</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://vi.wikipedia.org/wiki/V_(ca_s%C4%A9)" title="Click here if you want to know more about V" target="_blank">V</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/V_(ca_s%C4%A9)" title="Click here if you want to know more about V" target="_blank">Kim Taehyung</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/V_(ca_s%C4%A9)" title="Click here if you want to know more about V" target="_blank">30/12/1995 &#x2651</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://vi.wikipedia.org/wiki/Jungkook" title="Click here if you want to know more about Jungkook" target="_blank">Jungkook</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/Jungkook" title="Click here if you want to know more about Jungkook" target="_blank">Jeon Jungkook</a></td>
+    <td><a href="https://vi.wikipedia.org/wiki/Jungkook" title="Click here if you want to know more about Jungkook" target="_blank">01/09/1997 &#x264D</a></td>
+  </tr>
+<table>
+
+<!-- Tiếp theo là phần danh sách -->
+
+<h3 id="ds2">Danh sách đĩa nhạc</h3>
+<h4>Album phòng thu tiếng Hàn</h4>
+<ul>
+  <li>Dark & Wild (2014)</li>
+  <li>Wings (2016)</li>
+  <li>Love Yourself: Tear (2018)</li>
+  <li>Map of the Soul: 7 (2020)</li>
+  <li>Be (2020)</li>
+</ul>  
+<h4>Album phòng thu tiếng Nhật</h4>
+<ol>
+  <li>Wake Up (2014)</li>
+  <li>Youth (2016)</li>
+  <li>Face Yourself (2018)</li>
+  <li>Map of the Soul: 7 – The Journey (2020)</li>
+</ol> 
+<h3 id="ds3">Các chuyến lưu diễn</h3>
+<dl>
+  <dt>The Red Bullet Tour (2014-2015)</dt>
+  <dd>- thu hút 80,000 khán giả(10 buổi diễn)</dd>
+  <dt>Wake Up: Open Your Eyes Japan Tour (2015)</dt>
+  <dd>- thu hút hơn 25,000 khán giả(6 buổi diễn)</dd>
+  <dt>The Most Beautiful Moment in Life On Stage Tour (2015–2016)</dt>
+  <dd>- thu hút hơn 182,500 khán giả(8 buổi diễn)</dd>
+  <dt>The Wings Tour (2017)</dt>
+  <dd>- thu hút 550,000 người hâm mộ(40 buổi diễn)</dd>
+  <dt>Love Yourself World Tour (2018–2019)</dt>
+  <dd>- thu hút hơn 2,019,800 khán giả (40 buổi diễn)</dd>
+</dl>
+<h3 id="ds4">Các liên kết ngoài</h3>
+<iframe src="https://ibighit.com/bts/eng/" name="bts" height="400px" width="100%" title="Các liên kết chính thức của BTS"></iframe>
+<p><a href="https://ibighit.com/bts/eng/" target="bts">OFFICIAL WEBSITE</a></p>
+<p><a href="https://cafe.daum.net/BANGTAN" target="bts">DAUM CAFE</a></p>
+
+
+<h3 id="ds5">Một số bài hát nổi bật</h3>
+<h4 style="text-align: center;">Blood Sweat and Tears (2016)</h4>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="images/bloodsweat&tear.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="323,6" height="181,2">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+
+<audio controls autoplay style="align-items: center;">
+  <source src="audio/Blood Sweat Tears - BTS.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+<h4 style="text-align: center;">ON (2020)</h4> 
+<video width="100%" controls autoplay muted>
+  <source src="video/BTS (방탄소년단) 'ON' Kinetic Manifesto Film - Come Prima.webm" type="video/webm">
+  <source src="video/videoplayback.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h3 id="ds6">Một số MV đạt hơn 1 tỉ lượt xem</h3>
+<h4 style="text-align: center;">Hạng 1: Boy With Luv (ft. Halsey) (2019)</h4> 
+<iframe height="400px" width="100%" src="https://www.youtube.com/embed/XsX3ATc3FbA?autoplay=1&mute=1&loop=0&controls=1"></iframe>
+</iframe><br>
+<h4 style="text-align: center;">Hạng 2: DNA (2017)</h4> 
+<iframe height="400px" width="100%" src="https://www.youtube.com/embed/MBdVXkSdhwU?autoplay=1&mute=1&loop=0&controls=1"></iframe>
+</iframe>
+
+<!-- Dẫn link form khảo sát -->
+<h3 id="ks">Khảo sát</h3>
+<p><b>Dưới đây là một bài khảo sát nhỏ dành cho các ARMY của chúng ta. Hãy click vào nút bên dưới để cùng tham gia vào bài khảo sát nào!</b></p>
+<div class="a1"><a class="k" href="khaosat.html" target="_blank">Start!</a></div><br>
+</div>
+
+
+<!-- Phần chân trang -->
+<br>
+<hr>
+<footer id="footer">
+  <button onclick="getLocation()">Your Location</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+</script>
+<div>
+<address>
+Written by Thao Anh.<br>
+Hanoi, Vietnam.<br>
+<button onclick="document.location='mailto:thaoanhjennyhoahong@gmail.com'">Send email</button>
+</address>
+</div>
+</footer>
+</div>
+
+</body>
+</html>
